@@ -11,12 +11,14 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            
         }
 
         body {
             position: relative;
             box-sizing: border-box;
             width: 100vh;
+            overflow: hidden;
             
         }
         .purple {
@@ -46,8 +48,13 @@
         }
 
         main {
-            background: #aaa;
+            position: absolute;
             z-index: 2;
+            width: 100%;
+        }
+
+        .container {
+            padding: 20px;
         }
     </style>
 </head>
@@ -57,10 +64,20 @@
 
 
     <main>
-        <div class="left-pane"></div>
-        <div class="right pane">
-            <h1>Simple booking</h1>
-            <p>Stay in touch with our dog walker through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+        <div class="container">
+            <div class="left-pane">
+                <div class="phone">
+                    <div class="dogs">
+                        <img src="img/corbis-rd001979.jpg" alt="dog1" width="200px">
+                        <img src="img/images.jpg" alt="dog2">
+                        <img src="img/RedboneCoonhoundClydeLargeSizeDog.jpg" alt="dog3" width="200px">
+                    </div>
+                </div>
+            </div>
+            <div class="right pane">
+                <h1>Simple booking</h1>
+                <p>Stay in touch with our dog walker through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+            </div>
         </div>
     </main>
 </body>
