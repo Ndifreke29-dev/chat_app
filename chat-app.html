@@ -28,6 +28,7 @@
             border-bottom-left-radius: 225px;
             position: absolute;
             left: -100px;
+            z-index: 0;
             /* box-shadow: 1px 5px 50px -28px; */
         }
         .lightpurple {
@@ -40,14 +41,27 @@
             position: absolute;
             top: 65px;
             right: -750px;
+            z-index: 1;
             /* box-shadow: 1px 5px 50px -28px rgb(204, 204, 204); */
+        }
+
+        main {
+            background: #aaa;
+            z-index: 2;
         }
     </style>
 </head>
 <body>
-    <div class="purple">
-        
-    </div>
+    <div class="purple"></div>
     <div class="lightpurple"></div>
+
+
+    <main>
+        <div class="left-pane"></div>
+        <div class="right pane">
+            <h1>Simple booking</h1>
+            <p>Stay in touch with our dog walker through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+        </div>
+    </main>
 </body>
 </html>
