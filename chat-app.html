@@ -6,79 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
     <link rel="stylesheet" href="chat-app.css">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            
-        }
-
-        body {
-            position: relative;
-            box-sizing: border-box;
-            width: 100vh;
-            overflow: hidden;
-            
-        }
-        .purple {
-            float: left;
-            width: 450px;
-            height: 630px;
-            background: linear-gradient(to top, rgb(103, 0, 187), rgb(205, 7, 255));
-            border-bottom-right-radius: 225px;
-            border-bottom-left-radius: 225px;
-            position: absolute;
-            left: -100px;
-            z-index: 0;
-            /* box-shadow: 1px 5px 50px -28px; */
-        }
-        .lightpurple {
-            float: right;
-            width: 450px;
-            height: 630px;
-            background: linear-gradient(to top, rgba(103, 0, 187, 0.05), rgba(205, 7, 255, 0.05));
-            border-top-right-radius: 225px;
-            border-top-left-radius: 225px;
-            position: absolute;
-            top: 65px;
-            right: -750px;
-            z-index: 1;
-            /* box-shadow: 1px 5px 50px -28px rgb(204, 204, 204); */
-        }
-
-        main {
-            position: absolute;
-            z-index: 2;
-            width: 100%;
-        }
-
-        .container {
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
-    <div class="purple"></div>
-    <div class="lightpurple"></div>
 
+    <div class="container">
 
-    <main>
-        <div class="container">
-            <div class="left-pane">
-                <div class="phone">
-                    <div class="dogs">
-                        <img src="img/corbis-rd001979.jpg" alt="dog1" width="200px">
-                        <img src="img/images.jpg" alt="dog2">
-                        <img src="img/RedboneCoonhoundClydeLargeSizeDog.jpg" alt="dog3" width="200px">
+        <div class="phone">            
+            <div class="phone-inner">
+                <div class="img-name-box">
+                    <div class="img-name-box-top-holder">
+                        <div class="img-name-box-top"></div>
+                    </div>
+                    
+                    <div class="img-name-box-flex">
+                        <div class="img-box">
+                        <img class="avatar" src="img/avatar.jpg" alt="Avatar">
+                    </div>
+                    <div class="name-box">
+                        <h1>Samuel Green</h1>
+                        <h2>Available to Walk</h2>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="paragraph-1">
+                    <p>
+                        That sounds great. I'd be happy to discuss more.
+                    </p>
+                </div>
+
+                <div class="paragraph-1 more-margin">
+                    <p>
+                        Could you send over some pictures of your dog. please?
+                    </p>
+                </div>
+                
+                <div class="dogs">
+                    <img class="dog-images" src="img/dog-image-1.jpg" alt="dog1">
+                    <img class="dog-images" src="img/dog-image-2.jpg" alt="dog2">
+                    <img class="dog-images" src="img/dog-image-3.jpg" alt="dog3">
+                </div>
+                <div class="par2-align-right">
+                    <div class="paragraph-2">
+                        <p>
+                            Here are a few pictures. She's a happy girl!
+                        </p>              
                     </div>
                 </div>
-            </div>
-            <div class="right pane">
-                <h1>Simple booking</h1>
-                <p>Stay in touch with our dog walker through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+                <div class="par2-align-right">
+                    <div class="paragraph-2 more-margin width">
+                        <p>
+                            Can you make it?
+                        </p>              
+                    </div>
+                </div>
+
+                <div class="paragraph-1">
+                    <p>
+                        She looks so happy! The time we discussed works. How long shall I take her out for?
+                    </p>                        
+                </div>
+
+                <div class="paragraph-3">
+                    <div class="cir">
+                        <div class="circle"></div>                        
+                    </div>
+                    <div class="text-1">
+                        <p>30 minute walk</p>                     
+                    </div>
+                    <span>$29</span>           
+                </div>
+
+                <div class="paragraph-3">
+                    <div class="cir">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="text-2">
+                        <p>1 hour walk</p>
+                    </div>
+                    <span>$49</span>                          
+                </div>
+
+                <div class="input-box">
+                    <div class="text-3">
+                        <p>Type a message...</p>
+                    </div>
+                    
+                    <div class="cir">
+                        <div class="circle1">
+                            <p>go</p>
+                        </div>
+                    </div>                                           
+                </div>
             </div>
         </div>
-    </main>
+
+        <div class="write-up">
+            <h3>Simple booking</h3>
+            <p class="pp">Stay in touch with our dog walker through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+        </div>
+
+        <div class="purple"></div>
+        <div class="lightpurple"></div>
+    </div>
+    
 </body>
 </html>
